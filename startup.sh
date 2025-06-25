@@ -12,7 +12,7 @@ sudo chown $USER /dev/input/evkey-shortcuts
 fi
 #cd /src/evkey && sudo nice -n19 ./evkey simple cpulimit -l 50 --
 #cd /src/evkey && sudo nice -n19 ./evkey simple
-sudo ln -sf /dev/input/by-path/*-kbd /dev/input/kbd
+sudo ln -sf /dev/input/by-id/*-event-kbd /dev/input/kbd
 sudo chown $USER /dev/input/kbd
 
 cd /src/evkey
